@@ -1,0 +1,35 @@
+/* Topbar.css */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color for contrast */
+    padding: 10px 20px; /* Padding around the content */
+    border-bottom: 1px solid #444; /* Slight border for separation */
+  }
+  
+  .topbar-item {
+    font-size: 16px; /* Font size for the items */
+    font-weight: 500; /* Slightly bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .topbar-item:hover {
+    color: #f39c12; /* Highlight color on hover */
+  }
+  
+  /* Optional: Responsive Design */
+  @media (max-width: 768px) {
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .topbar-item {
+      margin-bottom: 10px;
+    }
+  }
+  

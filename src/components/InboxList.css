@@ -1,0 +1,64 @@
+.inbox-list {
+    background-color: #2c2f33; /* Dark background */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inbox-list h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #7289da; /* Subtle color for heading */
+    border-bottom: 2px solid #7289da;
+    padding-bottom: 10px;
+  }
+  
+  .email-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .email-item {
+    background-color: #3a3f45; /* Slightly lighter shade for items */
+    padding: 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .email-item:hover {
+    background-color: #4e545a; /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .email-sender {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .email-preview {
+    font-size: 0.9em;
+    color: #b9bbbe; /* Slightly muted color for preview text */
+    margin-bottom: 8px;
+    flex-grow: 1;
+  }
+  
+  .email-status {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #43b581; /* Green color for status */
+  }
+  
+  .email-date {
+    font-size: 0.75em;
+    color: #99aab5;
+    text-align: right;
+  }
+  

@@ -1,0 +1,44 @@
+.lead-details {
+    background-color: #2e2e2e; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    max-width: 600px;
+    margin: 20px auto;
+    color: #e0e0e0; /* Light grey text */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .lead-details h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #ffffff; /* White text for headings */
+    border-bottom: 2px solid #444; /* Subtle border under headings */
+    padding-bottom: 5px;
+  }
+  
+  .lead-details p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #d1d1d1; /* Light grey for paragraphs */
+  }
+  
+  .lead-details p strong {
+    color: #ffffff; /* Strong emphasis with white color */
+  }
+  
+  .lead-details p a {
+    color: #7289da; /* Link color with a subtle blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .lead-details p a:hover {
+    color: #5b6eae; /* Darker shade on hover */
+  }
+  
+  .lead-details .section-title {
+    margin-top: 20px;
+    color: #e0e0e0;
+  }
+  
