@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import { FaHome, FaUser, FaEnvelope, FaPaperPlane, FaList, FaBell, FaChartBar, FaSun, FaMoon } from 'react-icons/fa';
 import './OneBox.css';
 import LeadDetails from './LeadDetails'; 
@@ -38,7 +38,7 @@ const OneBox = () => {
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
     };
-  }, [items]);
+  }, [items, handleDelete]); // Added handleDelete to the dependency array
 
   const handleDelete = (threadId) => {
     axios.delete(`/onebox/${threadId}`)
@@ -56,19 +56,6 @@ const OneBox = () => {
     setDarkMode(!darkMode);
   };
 
-  /*const handleReplyClick = (threadId) => {
-    setSelectedThreadId(threadId);
-    setShowReplyForm(true);
-  };
-
-  const handleCloseReplyForm = () => {
-    setShowReplyForm(false);
-  };
-
-  const handleReplySubmit = (data) => {
-    setReplyText(data); // Assuming you want to use this for something
-    navigate('/display-reply'); 
-  };*/
   const handleReplyClick = (threadId) => {
     setSelectedThreadId(threadId);
     setShowReplyForm(true);
@@ -79,10 +66,9 @@ const OneBox = () => {
   };
 
   const handleReplySubmit = (reply) => {
-    setReplyText(reply.body); // Store reply text
-    navigate('/display-reply', { state: { replyText: reply.body } }); // Pass state with replyText
+    setReplyText(reply.body);
+    navigate('/display-reply', { state: { replyText: reply.body } });
   };
-
 
   return (
     <div className={`app-container ${darkMode ? 'dark-mode' : 'light-mode'}`}>

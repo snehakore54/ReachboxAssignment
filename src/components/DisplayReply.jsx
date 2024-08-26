@@ -10,7 +10,7 @@ const DisplayReply = () => {
   return (
     <div className="display-reply-container">
       <h1>Display Reply</h1>
-      <p>{replyText}</p> {/* Display the reply text */}
+      <p>{replyText}</p> 
     </div>
   );
 };

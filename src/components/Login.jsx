@@ -34,7 +34,7 @@ const Login = ({ onLogin }) => {
               Sign Up with Google
             </button>
             <button className="create-account-button">Create an Account</button>
-            <p>Already have an account? <a href="#">Sign In</a></p>
+            <p>Already have an account? <a href="/signin">Sign In</a></p>
           </div>
         </div>
       </div>
